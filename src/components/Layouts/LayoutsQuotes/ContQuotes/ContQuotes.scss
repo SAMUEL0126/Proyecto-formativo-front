@@ -1,0 +1,102 @@
+.backgruondCont{
+    width: 100%;
+    height: auto;
+    background-image: url('../../../../images/Fondos/fondoPaisajeBlack.jpg');
+    background-size: cover;
+
+}
+    .ShadowCont{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.626);
+        .FormQuot{
+            width: 35%;
+            margin-top: 3%;
+            background-color: var(--colorBlack);
+            padding: 50px;
+            margin-bottom: 3%;
+            #addfile{
+                background-color:var(--colorGray5);
+                width: 100%;
+                height: 14%;
+                margin-bottom: 20px;
+                border-color: var(--colorBlack);
+                text-align: center;
+                color: var(--colorBlack);
+            }
+            #btnEnviar{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+            input{
+                margin-bottom: 20px;
+                width: 100%;
+                height: 30px;
+                color: white;
+                background-color: black;
+                border: none;
+                border-bottom: 2px solid white;
+            }
+            button{
+                width: 100%;
+                background-color: var(--colorGray5);
+                color: var(--colorBlack);
+                border-color: var(--colorBlack);
+            }
+        }
+
+        #textMessage{
+            width: 100%;
+            height: 100px;
+        }
+    }
+
+
+    @media screen and (max-width: 963px) {
+        .backgruondCont{
+            .ShadowCont{
+                .FormQuot{
+                    width: 55%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 693px){
+        .backgruondCont{
+            .ShadowCont{
+                .FormQuot{
+                    width: 55%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 545px){
+        .backgruondCont{
+            .ShadowCont{
+                .FormQuot{
+                    width: 75%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .backgruondCont{
+            .ShadowCont{
+                .FormQuot{
+                    width: 95%;
+                    height: auto;
+                }
+            }
+        }
+    }

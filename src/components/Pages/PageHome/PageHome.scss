@@ -1,0 +1,125 @@
+// P A G E  H O M E
+.MainView{
+    background-image: url('../../.././images/Fondos/Fondo_MainView.jpg');
+    width: 100%; height: 100vh; 
+    background-size: cover;
+    display: flex; flex-direction: column;
+    justify-content: center;align-items: center; gap: 10px;
+    
+    div{
+        margin: 20px 0;
+        display: flex;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .MainView{
+        text-align: center;
+        h1,h2 {font-size: 40px;}
+        div{flex-direction: column}
+    }
+}
+
+////////////////////////////
+
+.SeeTattooists {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+////////////////////////////
+
+.Tattooists_Services{
+    background-image: url('../../.././images/Fondos/fondServices.jpg');
+    width: 100%; height: auto; background-position: center;
+    background-size: cover; padding: 50px 0;
+
+    .Title_Services{ 
+        width: 100%; height: auto;
+        padding: 5rem 0;
+        text-align: center; 
+
+        h1{
+            font-size: 45px;
+        }
+    }
+
+    .Services{
+        width: 100%;
+        display: flex;justify-content: center;
+        align-items: center; gap: 15rem; flex-wrap: wrap;
+    }
+
+    .Services_content{
+        display: flex; justify-content: center;
+        flex-direction: column; align-items: center;
+        gap: 15px; flex-wrap: wrap;
+
+        img{ width: 100px; transition: all 0.7s;}
+        img:hover{
+            transform: scale(1.2);
+            transition: all 0.7s;
+        }
+
+        h1{ font-size: 30px;}
+    }
+
+}
+
+@media (max-width: 600px) {
+    .Tattooists_Services {
+        .Services {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7rem;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+}
+
+
+.menuhorizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menuhorizontal > li > a{
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+.menuvertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menuhorizontal li:hover .menuvertical{
+	display: block;
+}
+.menuvertical li:hover{
+	background-color: var(--colorWhite);
+    color: var(--colorBlack);
+}
+
+.menuvertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;  
+	padding: 15px 15px 15px 20px;
+}
+
+.menuvertical li a:hover{
+    color: var(--colorBlack);
+
+}

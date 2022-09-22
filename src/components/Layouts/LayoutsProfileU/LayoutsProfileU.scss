@@ -1,0 +1,74 @@
+.Content_profleUser{
+    width: 100%;
+    height: 100vh;
+    .FaceUser{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .contImgUser{
+            width: 97%;
+            height: auto;
+            margin-top: 3%;
+            display: flex;
+            justify-content: center;
+            margin-left: 30px;
+            .User{
+                width: 200px;
+                height: 180px;
+                border-radius: 100%;
+            }
+            .contLa{
+                a{
+                    color: var(--colorOrange2);
+                }
+            }
+        }
+        .contInfoUser{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            h3{
+                width: 97%;
+            }
+        }
+    }
+    .InfoUser{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        text-align: center;
+        
+    }
+    .agendas{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        .contAgendas{
+            width: 80%;
+            height: auto;
+            background-color: black;
+            padding: 40px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            .cit{
+                width: 43%;
+                border-radius: 5px;
+                background-color: rgb(59, 59, 59);
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .TatuadorC{
+                    width: 40%;
+                    height: auto;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

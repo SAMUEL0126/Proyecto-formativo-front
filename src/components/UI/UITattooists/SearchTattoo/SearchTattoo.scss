@@ -1,0 +1,159 @@
+.Content_Tattooists{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    .Content_TattooistsTitle{
+        padding: 20px;
+
+        p{
+            padding: 10px;
+            font-size: 18px;
+            color: var(--colorWhite2);
+        }
+    }
+
+    .main-contenido{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 3rem;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+.our-team-section{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.member-container{
+    width: 350px;
+    height: auto;
+    background-color: #f9f9f9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+
+    img{
+        width:250px;
+        height:250px;
+    }
+}
+
+.member-container:hover{
+    transform: translateY(-20px);
+}
+
+
+/*       B U S C A D O R       */
+
+.contSearch{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.search-box{
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.search-box:hover > input {
+    width: 300px;
+    padding: 0 10px;
+}
+
+svg :hover{
+    transform: rotate(360deg) scale(0.8);
+}
+.Buscador12{
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    background: none;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+}
+svg{
+    color: var(--colorWhite2);
+    float: right;
+    width: 50px;
+    font-size: 1.3rem;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.member-name{
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    margin: 1rem 0 0 0;
+    color: #202020;
+}
+
+.member-name::after{
+    content: "";
+    background-color: #202020;
+    height: 4px;
+    width: 100px;
+    top: 105%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5px;
+}
+
+.member-description{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--colorBlack);
+    margin-top: 10px;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    background-color: #202020;
+    font-weight: 600;
+    padding: 13px 20px;
+    margin-top: 1rem;
+}
+
+.button:hover{
+    color: white;
+}
+
+img.imgtattooists{
+    filter: grayscale(100%);
+}
+

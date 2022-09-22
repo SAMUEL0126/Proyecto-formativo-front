@@ -1,0 +1,210 @@
+*{
+    padding:0; margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+
+::selection {
+    background: var(--colorOrange);
+    color: var(--colorBlack);
+}
+
+
+.titleMP4{
+    background-image: url(https://media.giphy.com/media/26BRvIYDe4ILO60Ni/source.gif);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+li {list-style: none;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Rajdhani,sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -.04em;
+}
+
+
+h1,h2 {font-size: 55px;}
+
+a {text-decoration: none;}
+
+p{
+    font-weight: 400;
+    letter-spacing: -.02em;
+    line-height: 29px;
+}
+
+
+
+// ============ ESTILOS GLOBALES  ============  //
+
+// =================================
+// Clase Global Para Un Div Vacio Si 
+// Quieren Hacer Una Linea Separadora
+// =================================
+
+.separator {
+    border-style: solid;
+    border-color: #ffffff;
+    width: 80px;
+    border-bottom-width: 7px;
+    margin: 5px 0 20px 0px;
+}
+
+// =================================
+// Clase Global Para Un boton :)
+// =================================
+
+.buttons_global_StyleTatto {
+    color: var(--colorWhite);
+    border: 2px solid var(--colorWhite);
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 1; margin-top: 15px;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    text-align: center;
+}
+
+.buttons_global_StyleTatto:hover {
+    color: var(--colorBlack);
+}
+    .buttons_global_StyleTatto::after {
+        content: "";
+        background: var(--colorWhite);
+        position: absolute;
+        z-index: -1;
+        display: block;
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+        transition: all 0.2s ease;
+    }
+    
+    .buttons_global_StyleTatto:hover::after {
+        transition: all 0.3s ease-out;
+        transform: skewX(-45deg) scale(1, 1);
+}
+
+
+
+//////////////////////////////////////////////
+//      Clase Global Para Los Formularios
+//////////////////////////////////////////////
+
+
+// Div
+.Content_FormsPrincipal{
+    background-position: center; background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+
+    // Div
+    .Content_Forms{
+        background-color: #000000ba;
+        width: 380px;
+        height: 450px;
+        padding: 22px;
+        font-size: 15px;
+        box-sizing: border-box;
+
+        h1{text-align: center;font-size: 30px;margin-top: 20px;}
+
+        // Div
+        .inputContent{
+            position: relative;
+            margin-top: 36px;
+
+            // Input
+            .input_global_style{
+                margin-top: 20px;
+                display: block;
+                margin: bottom 20px;
+                width: 100%;
+                font-size: 15px;
+            }
+            
+            // Label
+            .label_global_style{
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                transition: .3s ;
+                pointer-events: none;
+                color: var(--colorGray3);
+            }
+    
+            .input_global_style:focus~.label_global_style,.input_global_style:valid~.label_global_style{
+                top: -10px;
+                color: var(--colorWhite2);
+            }
+    
+            .input_global_style[type="text"],
+            .input_global_style[type="password"]{  /* Aca lo que hice fue solo modificar los inputs de text y password */
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                color: #fff;
+            }
+        }
+    }
+    button{ width: 100%; margin: 1.52rem 0 1.52rem 0; }
+}
+
+
+
+@media(max-width:900px){
+    .Content_FormsPrincipal {
+        height: 80vh;
+
+        .Content_Forms {
+            width: 343px;
+        }
+    }
+}
+
+
+@media(max-width:480px){
+    .buttons_global_StyleTatto{
+        font-size: 18px;
+        width: 250px;
+    }
+
+    .Content_FormsPrincipal{
+        height: 95vh;
+
+        .Content_Forms {
+            height: 500px;
+            width: 380px;
+        
+            h1{font-size: 40px;}
+        }
+    }
+}
+
+
+
+

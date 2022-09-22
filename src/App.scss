@@ -1,0 +1,26 @@
+@use './scss/abstracts/mixin';
+@use './Scss/abstracts/variables';
+
+
+@use './Scss/base/base';
+@use './Scss/base/global';
+
+
+/*Scrollbar styles*/
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--colorOrange2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--colorOrange2);
+}
+

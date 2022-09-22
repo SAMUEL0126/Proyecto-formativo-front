@@ -1,0 +1,140 @@
+#burguer {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu {
+    background-color: var(--colorBlack);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 80px;
+    margin-left: 100px;
+  }
+  
+  .menu-items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    justify-content: center;
+  
+    li {
+      border-radius: 3px;
+      margin: 0 5px;
+  
+      a {
+        padding: 7px 13px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+      }
+  
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: 4s;
+      }
+    }
+  }
+  
+  li.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 4s;
+  }
+  
+  .btn menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  
+  ul.open {
+    top: 65px;
+    z-index: 10;
+  }
+  
+  @media (max-width: 952px) {
+    .logo {
+      font-size: 30px;
+      padding-left: 35px;
+    }
+  
+    .menu-items li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 858px) {
+    .menu {
+      height: 65px;
+    }
+  
+    #burguer {
+      display: inline-flex;
+      font-size: 2.356rem;
+    }
+  
+    .menu-items {
+      position: fixed;
+      left: 0rem;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: calc(100% - 65px);
+      background: black;
+      top: -100vh;
+      text-align: center;
+      transition: all, .4s;
+      flex-direction: column;
+  
+      li {
+        margin: 30px 0px 0px 0px;
+        line-height: 30px;
+  
+        &:hover {
+          background: none;
+        }
+  
+        a {
+          font-size: 20px;
+          color: #fff;
+          font-weight: bold;
+  
+          &:hover {
+            color: var(--colorGrays);
+          }
+        }
+      }
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding-left: 35px;
+    }
+  }
+  
+  @media (max-width: 858px) and (orientation: landscape) {
+    .menu-items {
+      li {
+        margin: 5px 0px 0px 0px;
+      }
+  
+      overflow: scroll;
+      height: calc(100% - 65px);
+    }
+  }
